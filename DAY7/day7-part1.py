@@ -26,12 +26,42 @@ def input_operations(input: str):
 
     return input
 
-def camelSort():
-    pass
+def sort_criteria(x: list):
+    # we change the hand to a base 15 number and compare it
+    # T -> A
+    # J -> B
+    # Q -> C
+    # K -> D
+    # A -> E - need to be performend first as it is the only char actually used to present numbers in the base 15
+    ans = x['hand'].replace('A', 'E').replace('K', 'D').replace('Q', 'C').replace('J', 'B').replace('T', 'A')
+    return int(ans, 15)
+
+def camel_sort(input: list):
+    names = ['Four of a kind', 'Full house', 'Three of a kind', 'Two pair', 'One pair', 'High card']
+    SevenLists = [[element for element in input if element['type'] == 'Five of a kind']]
+    for n in names:
+        lToAppend = [element for element in input if element['type'] == n]
+        lToAppend.sort(key=sort_criteria, reverse=True)
+        SevenLists.append(lToAppend)
+    ans = []
+    for l in SevenLists:
+        ans.extend(l)
+    return ans
+
+def camel_sum(x: list):
+    ans = 0
+    rank = 1000
+    for camel in x:
+        ans += camel['bid']*rank
+        rank -= 1
+    return ans
+
 
 def main():
     with open('day7-input.txt', 'r') as file:
-        pprint(input_operations(file.read()))
+        input = input_operations(file.read())
+        input = camel_sort(input)
+        print(camel_sum(input))
 
 if __name__ == '__main__':
     main()
