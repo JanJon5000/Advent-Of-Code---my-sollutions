@@ -1,6 +1,3 @@
-
-import java.nio.file.Paths;
-import java.nio.file.Path;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -9,7 +6,6 @@ import java.util.NoSuchElementException;
 public class day1 {
     public static void main(String[] args) {
         try{
-            Path path = Paths.get("C:\\Users\\janj\\.vscode\\VSCODE\\AOC23\\2022\\DAY1\\data.txt");
             File data = new File("C:\\Users\\janj\\.vscode\\VSCODE\\AOC23\\2022\\DAY1\\data.txt");
             Scanner myReader = new Scanner(data);
             int maxCalories = 0;
