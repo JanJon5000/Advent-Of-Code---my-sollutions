@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.File;
 import java.io.IOException;
 
-public class d6p1{
+public class d6p2{
     public static int countDistinct(String word){
         int num = 0;
         Set<String> placeholder = new HashSet<>();
@@ -17,9 +17,9 @@ public class d6p1{
             File data = new File("C:\\Users\\janj\\.vscode\\VSCODE\\AOC23\\2022\\DAY06\\data.txt");
             Scanner myScanner = new Scanner(data);
             String line = myScanner.nextLine();
-            for(int i=4;i<line.length();i++){
-                String sub = line.substring(i-4, i);
-                if(countDistinct(sub) == 4){
+            for(int i=14;i<line.length();i++){
+                String sub = line.substring(i-14, i);
+                if(countDistinct(sub) == 14){
                     counter = i;
                     break;
                 }
