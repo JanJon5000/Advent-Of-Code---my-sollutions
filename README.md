@@ -6,5 +6,5 @@
 
 <ul>
   <li> <a href=https://adventofcode.com/2022> Advent Of Code 2022 </a> - collected <strong>12</strong> stars with Java 23.0+ </li>
-  <li> <a href=https://adventofcode.com/2023> Advent Of Code 2023 </a> - collected <strong>15</strong> stars with Python 3.9+ </li>
+  <li> <a href=https://adventofcode.com/2023> Advent Of Code 2023 </a> - collected <strong>16</strong> stars with Python 3.9+ </li>
 </ul>
