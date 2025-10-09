@@ -23,8 +23,9 @@ with open('Day5-If-You-Give-A-Seed-A-Fertilizer-input.txt', 'r') as file:
             pass
     seeds = line[1:]
     conditions = []
-    for _ in range(209):
+    for _ in range(32):
         line = file.readline().replace("\n", "").split(" ")
+        print(line, _)
         if len(line) == 3:
             conditions.append([int(i) for i in line])
         elif len(line) == 1:
