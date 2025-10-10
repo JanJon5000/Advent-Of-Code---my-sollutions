@@ -5,7 +5,7 @@
 <p> It started in 2023 when I was solving challanges in python. I couldnt solve all of them but had a lot of fun with trying. Today - 13 April 2025 i returned to it with a new idea. I will try to solve diffrent years' challanges with diffrent programming languages. Its propably not original but here is a list of what I at least started to solve and with which language and how it is going:</p>
 
 <ul>
-  <li> <a href=https://adventofcode.com/2015> Advent Of Code 2015 </a> - collected <strong>2</strong> stars with Dlang </li>
+  <li> <a href=https://adventofcode.com/2015> Advent Of Code 2015 </a> - collected <strong>4</strong> stars with Dlang </li>
   <li> <a href=https://adventofcode.com/2022> Advent Of Code 2022 </a> - collected <strong>12</strong> stars with Java 23.0+ </li>
   <li> <a href=https://adventofcode.com/2023> Advent Of Code 2023 </a> - collected <strong>16</strong> stars with Python 3.9+ </li>
 </ul>
