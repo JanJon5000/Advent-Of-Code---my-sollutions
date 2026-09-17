@@ -30,34 +30,36 @@ void parse(int* arr, char* str){
         }
         str++;
     }
-    if(inNumber) *arr = number;   // domknięcie ostatniej liczby
+    if(inNumber) *arr = number;
 }
 
-
-triangle_t triangle_init(int* arr){
+triangle_t triangle_init(int a, int b, int c){
     triangle_t answer;
-    answer.a = arr[0];
-    answer.b = arr[1];
-    answer.c = arr[2];
+    answer.a = a;
+    answer.b = b;
+    answer.c = c;
     return answer;
 }
 
 int main(){
     FILE* flptr = fopen("input.txt", "r");
-    int placeholderArray[3];
+    int placeholderArray[3][3];
     int counter = 0;
+    int lineCounter = 0;
     triangle_t triangle;
     char word[255];
     
     while(fscanf(flptr, " %255[^\r\n]", word) == 1){
-        parse(placeholderArray, word);
-        printf("%i, %i, %i\r\n", placeholderArray[0], placeholderArray[1], placeholderArray[2]);
-        triangle = triangle_init(placeholderArray);
-        counter += isValid(triangle);
-
-        int sep = fgetc(flptr);
-        if (sep == EOF) {
-            break;
+        parse(placeholderArray[lineCounter], word);
+        lineCounter++;
+        if(lineCounter == 3){
+            printf("po transponowaniu: \r\n");
+            for(int i=0;i<3;i++){
+                triangle = triangle_init(placeholderArray[0][i], placeholderArray[1][i], placeholderArray[2][i]);
+                printf("%i, %i, %i\r\n", triangle.a, triangle.b, triangle.c);
+                counter += isValid(triangle);
+            }
+            lineCounter = 0;
         }
     }
 
