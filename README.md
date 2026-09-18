@@ -6,7 +6,7 @@
 
 <ul>
   <li> <a href=https://adventofcode.com/2015> Advent Of Code 2015 </a> - collected <strong>10</strong> stars with Dlang </li>
-  <li> <a href=https://adventofcode.com/2016> Advent Of Code 2016 </a> - collected <strong>5</strong> stars with C </li>
+  <li> <a href=https://adventofcode.com/2016> Advent Of Code 2016 </a> - collected <strong>10</strong> stars with C </li>
   <li> <a href=https://adventofcode.com/2022> Advent Of Code 2022 </a> - collected <strong>12</strong> stars with Java 23.0+ </li>
   <li> <a href=https://adventofcode.com/2023> Advent Of Code 2023 </a> - collected <strong>17</strong> stars with Python 3.9+ </li>
 </ul>
